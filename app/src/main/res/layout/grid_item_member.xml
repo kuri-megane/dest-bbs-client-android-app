@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="232dp"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/textViewMemberImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/person_image_view_detail"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textViewMemberName"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/textViewMemberImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/default_person_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewMemberStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewMemberImage"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTypeA"
+        android:contentDescription="@string/get_status_checking_msg"
+        android:text="@string/get_status_checking_msg"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        tools:text="@string/get_status_checking_msg" />
+
+</RelativeLayout>

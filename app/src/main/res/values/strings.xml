@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Dest BBS</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- HomeActivity-->
+    <string name="home_activity_title">Dest BBS</string>
+    <string name="welcome_msg">Welcome to our %1$s!</string>
+    <string name="notice_tap">Please tap the person you want.</string>
+    <string name="action_bar_person_add">Add member</string>
+    <string name="action_bar_setting">Setting</string>
+    <string name="action_bar_help">Help</string>
+    <string name="get_calender_toast">Start getting calendar information.</string>
+    <string name="finish_get_calender_toast">Finish getting calendar information.</string>
+    <string name="cancelled_get_calender_toast">Cancelled getting calendar information.</string>
+    <string name="err_get_calender_toast">Err getting calendar information.</string>
+    <string name="get_status_checking_msg">Checking…</string>
+
+    <!-- PersonActivity -->
+    <string name="person_activity_title">Dest BBS</string>
+    <string name="person_image_view_detail">Member Image</string>
+    <string name="call_person">Call</string>
+    <string name="open_person_menu">It is me</string>
+    <!-- cf. "action_bar_help"-->
+    <string name="action_bar_person_edit">Edit this person</string>
+    <string name="action_bar_person_delete">Delete this person</string>
+
+    <!-- CallDialogFlagment-->
+    <string name="call_dialog_title">Calling</string>
+    <string name="call_dialog_msg">Do you call this person?</string>
+    <string name="finish_calling_toast">this function implementation during.\nPlease call directly.</string>
+    <string name="cancelled_calling_toast">I cancelled calling.</string>
+    <string name="email_subject">[%1$s] Call: %2$s</string>
+    <string name="email_body">(To those who are called) If you have a message, please fill in this text.</string>
+
+    <!-- UpdateStatusDialogFlagment-->
+    <string name="update_entering_room_title">Update status</string>
+    <string name="update_leaving_room_title">Where are you going?</string>
+    <string name="registering_status">Registering...</string>
+    <string name="finish_update_status">I recorded.</string>
+    <string name="cancelled_update_status">I cancelled recording.</string>
+    <string-array name="status_entering_room_list">
+        <item>Record entering room</item>
+    </string-array>
+    <string-array name="status_leaving_room_list">
+        <item>Go to class</item>
+        <item>Go to Meeting</item>
+        <item>Temporary Outing</item>
+        <item>Return Home</item>
+    </string-array>
+    <string-array name="status_code_array">
+        <item>入室</item>
+        <item>講義</item>
+        <item>会議</item>
+        <item>外出</item>
+        <item>帰宅</item>
+    </string-array>
+
+    <!-- DeletePersonFlagment -->
+    <string name="delete_person_dialog_title">Delete person</string>
+    <string name="delete_person_dialog_msg">Are you sure delete this person?</string>
+    <string name="finish_delete_person_toast">I delete this person.</string>
+    <string name="cancelled_delete_person_toast">I cancelled delete this person.</string>
+
+    <!-- HelpActivity-->
+    <string name="help_activity_title">Help</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_activity_title">Settings</string>
+    <!-- Settings General-->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_lab_name">Lab name</string>
+    <string name="pref_default_lab_name">Laboratory</string>
+    <string name="pref_title_address">Default contact address</string>
+    <string name="pref_default_address">foo\@gmail.com</string>
+
+    <!-- PersonAddActivity & PersonEditActivity -->
+    <string name="person_add_activity_title">Add member</string>
+    <string name="person_edit_activity_title">Edit member info</string>
+    <string name="person_setting_title">Person information setting</string>
+    <string name="enter_person_name_description">Name</string>
+    <string name="default_person_name">Taro Yamada</string>
+    <string name="enter_person_detail_description">Self-introduction</string>
+    <string name="default_person_detail">Ph.D. 1 year, Suzuki Lab, Team-Communication \n
+        Born: Japan \n
+        Hobby: Surfing \n
+        Favorite food: Delicious rice
+    </string>
+    <string name="calender_setting_title">Calender setting</string>
+    <string name="enter_calender_id_description">ID</string>
+    <string name="default_person_calendar">xxx@group.calendar.google.com</string>
+    <string name="create_new_calender_button">Create</string>
+    <string name="create_new_calender_msg">If you create new calendar, push Create button.</string>
+    <string name="edit_calender_msg">Can not change.</string>
+    <string name="no_internet_connection_msg">No network connection available.</string>
+    <string name="install_google_play_service_msg">This app requires Google Play Services.
+        Please install google Play Services on your device and relaunch this app.</string>
+    <string name="err_create_calender_msg">No results returned. Creation failed.</string>
+    <string name="result_create_calender">Calendar created.<b>If you use, please sync calender app!</b></string>
+    <string name="cancelled_create_calender">Cancelled create calendar.</string>
+    <string name="default_calender_title">Dest BBS Status</string>
+    <!--<string name="coordinate_calender_msg">Coordinate existing calender</string>-->
+    <!--<string name="coordinate_calender_button">Coordinate</string>-->
+    <!--<string name="release_calender_msg">Release calender</string>-->
+    <!--<string name="release_calender_button">Release</string>-->
+    <string name="enter_person_address_description">Contact address</string>
+    <!--cf. "pref_default_address" -->
+    <string name="thumbnail_setting_title">Thumbnail setting</string>
+    <string name="enter_thumbnail_description">Filename</string>
+    <string name="select_thumbnail_button">Select</string>
+    <string name="select_thumbnail_msg">Please push Select button.</string>
+    <string name="cannot_find_thumbnail_msg">No images found during registration.Please select again.</string>
+    <string name="default_person_image_id">dog_1</string>
+    <string-array name="image_ld_array">
+        <item>dog_1</item>
+        <item>dog_2</item>
+        <item>dog_3</item>
+        <item>dog_4</item>
+        <item>dog_5</item>
+        <item>dog_6</item>
+        <item>dog_7</item>
+        <item>dog_8</item>
+    </string-array>
+    <!--<string name="change_thumbnail_msg">Change thumbnail</string>-->
+    <!--<string name="change_thumbnail_button">Change</string>-->
+    <!--<string name="delete_thumbnail_msg">Delete thumbnail</string>-->
+    <!--<string name="delete_thumbnail_button">Delete</string>-->
+    <string name="default_person_status">out</string>
+    <!---->
+    <!--<string name="other_setting_title">Other setting</string>-->
+    <!--<string name="delete_person_msg">Delete this person</string>-->
+    <!--<string name="delete_person_button">Delete</string>-->
+    <string name="complete_input">Input complete</string>
+    <string name="finish_person_add_register">Finish register</string>
+
+    <string name="cannot_find_calender_msg">can not find calender</string>
+</resources>

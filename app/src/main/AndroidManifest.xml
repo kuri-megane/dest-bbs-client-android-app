@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.shishito_megane.dest_bbs_client_android_app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Google Calendar Provider -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- HomeActivity -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/home_activity_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PersonActivity -->
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/person_activity_title"
+            android:parentActivityName=".HomeActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- HelpActivity -->
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/help_activity_title"
+            android:parentActivityName=".HomeActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- SettingsActivity -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_activity_title"
+            android:parentActivityName=".HomeActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <!-- PersonAddActivity -->
+        <activity
+            android:name=".PersonAddActivity"
+            android:label="@string/person_add_activity_title">
+
+            <!-- XXX: 親ActivityはPersonActivityだが，登録未完了時の誤登録を防ぐため設定しない -->
+            <!-- android:parentActivityName=".PersonActivity" -->
+
+
+            <!-- &lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt; -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".PersonActivity" /> -->
+        </activity>
+
+        <!-- PersonEditActivity -->
+        <activity
+            android:name=".PersonEditActivity"
+            android:label="@string/person_edit_activity_title">
+            <!-- XXX: 親ActivityはPersonActivityだが，登録未完了時の誤登録を防ぐため設定しない -->
+            <!-- android:parentActivityName=".PersonActivity" -->
+
+
+            <!-- &lt;!&ndash; The meta-data tag is required if you support API level 15 and lower &ndash;&gt; -->
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value=".PersonActivity" /> -->
+        </activity>
+    </application>
+
+</manifest>
